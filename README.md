@@ -1,5 +1,5 @@
 Facebook opened up their Messenger platform to enable bots to converse with users through Facebook Apps/Pages.
-There are around 11,000 chatbots on the messenger platform. This is the code which I have used to build 
+There are around 11,000 chatbots on the messenger platform. This is the code which I've used to build 
 my Messenger Chatbot.
 
 ***************************************************
