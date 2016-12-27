@@ -17,4 +17,7 @@ Shopping Mall, Bar, Club, etc...etc...
 
 ***************************************************
 
+# License
+
+Licensed under the [MIT License](LICENSE).
    
