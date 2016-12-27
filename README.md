@@ -2,7 +2,7 @@
 
 Facebook opened up their Messenger platform to enable bots to converse with users through Facebook Apps/Pages.
 There are around 11,000 chatbots on the messenger platform. This my code for creating a messenger chatbot.
-my Messenger Chatbot.
+
 
 ***************************************************
 1. What is the Purpose of this chatbot?
