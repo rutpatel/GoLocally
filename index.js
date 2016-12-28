@@ -89,7 +89,6 @@ app.post('/webhook/', function (req, res) {
                 }
                 else if (event.postback && event.postback.payload){
                     //..........Do something with the postback here
-                   // processTextMessage(sender, "Bot: nearby " + event.postback.payload +' requested.');
                     var typeOfPlace = event.postback.payload;
                     if(placesArray.indexOf(typeOfPlace) > -1){ //postback is a type of a place
                         processTextMessage(sender,  typeOfPlace);
