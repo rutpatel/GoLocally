@@ -131,9 +131,6 @@ function processTextMessage(sender, text){
                 sendTextMessage(sender, 'Hi '+userName);
             }
         })
-        //setTimeout(function(){
-        //    sendTextMessage(sender, 'Say "Help" to know how to use me :-) !');
-        //}, 950);
     }
 
     else if(text.indexOf('start') > -1){
@@ -172,7 +169,6 @@ function processTextMessage(sender, text){
         });
         req.end();
     }
-
 }
 
 
@@ -189,7 +185,7 @@ function processLocation(sender, place){
                  {
                     "title": placeName+" near you: ",
                     "image_url": "https://maps.googleapis.com/maps/api/staticmap?size=764x400&markers="+userLat+","+userLong+"&zoom=16&key="+googleStaticMapKey,
-                    "item_url": "https://www.google.ca/maps/search/"+placeName+"/@"+userLat+","+userLong+",16z",
+                    "item_url": "https://www.google.com/maps/search/"+placeName+"/@"+userLat+","+userLong+",16z",
                     "subtitle": "Tap to view on map"
                  }
                 ] 
@@ -208,8 +204,7 @@ var mainMessageData;
 //For Sending Places options to the user in a template
 function options(sender, place){
     var placesUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+userLat+','+userLong+'&radius=5000&type='+place+'&key='+googlePlacesApiKey;
-    //console.log(placesUrl);
-    //console.log('^^^***');
+ 
     mainMessageData = '{"attachment":{ "type":"template", "payload":{ "template_type":"generic","elements": [' ;
     request(placesUrl, function(error, response, body){
         if(error) throw error;
